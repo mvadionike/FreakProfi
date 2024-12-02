@@ -1,0 +1,283 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    justify-content: center; /* Центрируем логотип */
+    align-items: center;
+    background-color: #2E7D32; /* Более темный зеленый */
+    color: #fff;
+    padding: 15px 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Сервисы (Логотипы разделов) */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service img {
+    height: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service img:hover {
+    transform: scale(1.1);
+}
+
+/* Контент */
+main {
+    padding: 30px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Слайдер */
+.slider {
+    text-align: center;
+    margin: 30px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    max-width: 600px; /* Уменьшаем размер слайдера */
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+/* Видео */
+.video {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    border: 4px solid #2E7D32; /* Темно-зеленая рамка */
+    transition: transform 0.3s ease;
+}
+
+.video video:hover {
+    transform: scale(1.05);
+}
+
+/* Секция текста */
+section {
+    margin: 20px 0;
+}
+
+section h1, section h2, section h3 {
+    color: #2E7D32; /* Темно-зеленый цвет */
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Тексты */
+p {
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+/* Текст для "Обеспечение безопасности при проведении массовых мероприятий" */
+.highlight {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2E7D32; /* Цвет как у заголовка */
+    text-align: center;
+}
+
+/* Стили для списка */
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+/* Стили для оборудования */
+.equipment-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2E7D32;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#equipment .equipment-item {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    width: 22%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#equipment .equipment-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #2E7D32;
+    transition: transform 0.3s ease;
+}
+
+#equipment .equipment-item img:hover {
+    transform: scale(1.05);
+}
+
+#equipment .equipment-item p {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #2E7D32;
+}
+
+@media (max-width: 768px) {
+    /* Для мобильных устройств */
+    .services {
+        flex-direction: column;
+    }
+
+    .service {
+        margin-bottom: 20px;
+    }
+
+    #equipment .equipment-item {
+        width: 45%;
+    }
+
+    header {
+        padding: 10px 15px;
+    }
+}
+
+/* Стиль для блока с партнерами */
+.partners {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.partners-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2E7D32; /* Цвет заголовка */
+    margin-bottom: 20px;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.partners-logos a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.partners-logos a:hover {
+    transform: scale(1.1);
+}
+
+.partners-logos img {
+    height: 100px;
+    width: auto;
+    border-radius: 8px;
+    border: 2px solid #2E7D32;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.photo-item {
+    text-align: center;
+    width: 23%; /* Уменьшите ширину для соответствующего ряда */
+}
+
+.photo-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-item p {
+    margin-top: 8px;
+    font-weight: bold;
+}
+.video-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.video-item {
+    text-align: center;
+    width: 48%; /* Для двух видео в строке */
+}
+
+.video-item video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.video-item p {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
+
+

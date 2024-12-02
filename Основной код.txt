@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПРОФИСТЮАРД</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Верхняя панель -->
+    <header>
+        <div class="logo">
+            <img src="профи.jpg" alt="Лого компании" onclick="navigateTo('main')">
+        </div>
+    </header>
+
+    <!-- Логотипы вкладок -->
+    <div class="services">
+        <div class="service" onclick="navigateTo('security')">
+            <img src="стадион.jpg" alt="Обеспечение">
+            <p>Обеспечение</p>
+        </div>
+        <div class="service" onclick="navigateTo('training')">
+            <img src="люди.jpg" alt="Специальная подготовка">
+            <p>Специальная подготовка</p>
+        </div>
+        <div class="service" onclick="navigateTo('equipment')">
+            <img src="рация.jpg" alt="Оборудование">
+            <p>Оборудование</p>
+        </div>
+    </div>
+
+    <!-- Контейнер для динамического контента -->
+    <main id="content">
+        <section id="main">
+            <h1>ПРОФИСТЮАРД</h1>
+            <p class="highlight">Обеспечение безопасности при проведении массовых мероприятий</p>
+            <div class="slider">
+                <img id="sliderImage" src="стадион 1.jpg" alt="Слайд">
+            </div>
+            <div class="video">
+                <p>ПРОФИСТЮАРД</p>
+                <video controls>
+                    <source src="главный.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+	<div class="partners">
+    <h2 class="partners-title">Наши партнеры</h2>
+    <div class="partners-logos">
+        <a href="https://fakelfc.ru/" target="_blank">
+            <img src="факел.jpg" alt="Факел">
+        </a>
+        <a href="https://pfc-cska.com/" target="_blank">
+            <img src="цска.jpg" alt="ЦСКА">
+        </a>
+        <a href="https://fcdm.ru/" target="_blank">
+            <img src="динамо.jpg" alt="Динамо">
+        </a>
+        <a href="https://fc-orel.ru/" target="_blank">
+            <img src="орёл.jpg" alt="Орёл">
+        </a>
+        <a href="https://rfs.ru/" target="_blank">
+            <img src="рфс.jpg" alt="РФС">
+        </a>
+        <a href="https://fcmetallurg-lp.ru/" target="_blank">
+            <img src="липецк.jpg" alt="Липецк">
+        </a>
+    </div>
+</div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
